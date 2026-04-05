@@ -1,7 +1,7 @@
 # Reglas para Mantener el Orden
 
 **Estatus:** ACTIVO - Seguir estrictamente  
-**Última revisión:** 2026-04-05 (actualizado)  
+**Última revisión:** 2026-04-05  
 **Responsable:** Donna 🦞
 
 ---
