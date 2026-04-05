@@ -1,256 +1,110 @@
-# OpenClaw - Agente Personal de Jaime
+# OpenClaw Workspace - Donna 🦞
 
-**Agente:** Donna 🦞  
-**Usuario:** Jaime (Jaimemprendedor)  
-**Estado:** Producción  
-**Versión:** 1.0.0
+**Agente personal de Jaime (Jaimemprendedor)**  
+*Directo, práctico, en español, orientado a resultados*
 
 ---
 
-## 🎯 **Propósito**
+## 📁 Estructura del Workspace
 
-Este repositorio contiene la configuración completa, personalidad, memoria y automatizaciones de **Donna**, el agente personal de IA de Jaime.
+### `/` (raíz)
+- `SOUL.md` — Personalidad y reglas del agente
+- `IDENTITY.md` — Nombre, emoji, identidad
+- `AGENTS.md` — Reglas operativas y guías
+- `USER.md` — Perfil y preferencias del usuario
+- `SECURITY.md` — Estado de seguridad y auditorías
+- `TOOLS.md` — Notas locales de herramientas
+- `HEARTBEAT.md` — Tareas periódicas
+- `README.md` — Este archivo
 
-Donna es un asistente ejecutivo impulsado por OpenClaw que ayuda a Jaime a:
-- **Automatizar tareas repetitivas** (email, calendario, documentos)
-- **Gestionar conocimiento** y tomar decisiones informadas
-- **Escalar operaciones** sin aumentar carga de trabajo
-- **Mantener focus** en lo estratégico vs operativo
+### `config/`
+- Archivos de configuración únicos del agente
+- Credenciales (excluidas de git via .gitignore)
+- Settings específicos de skills
 
----
+### `docs/`
+- Documentación generada
+- `SKILLS_COMPLETE_2026.4.2.md` — Lista completa de skills
+- `SKILLS_RECOMMENDATIONS.md` — Recomendaciones priorizadas
 
-## 🏗️ **Arquitectura**
+### `memory/`
+- `YYYY-MM-DD.md` — Notas diarias de actividad
+- `MEMORY.md` — Memoria a largo plazo (solo cargar en sesión principal)
 
-```
-OpenClaw/
-├── .github/workflows/     # CI/CD y automatización
-├── config/                # Configuración y secrets
-├── docs/                  # Documentación completa
-├── memory/                # Memoria del agente
-├── scripts/               # Scripts de automatización
-├── SOUL.md                # Personalidad del agente
-├── AGENTS.md              # Reglas operativas
-├── IDENTITY.md            # Identidad (Donna 🦞)
-├── CHANGELOG.md           # Historial de cambios
-└── .gitignore            # Archivos excluidos
-```
+### `scripts/`
+- Scripts de automatización
+- Utilities para mantenimiento
 
-### **Componentes Clave:**
+### `backups/`
+- Copias de seguridad periódicas
+- Snapshots de estado
 
-1. **OpenClaw Core** - Runtime del agente
-2. **Donna (Agente)** - Personalidad y reglas
-3. **Skills** - Extensiones de funcionalidad
-4. **Automatizaciones** - Scripts y workflows
-5. **Memoria** - Contexto y conocimiento
-
----
-
-## 🚀 **Empezar**
-
-### **Requisitos:**
-- OpenClaw 2026.4.2+
-- Node.js 18+
-- Git, GPG
-- Cuentas: Google Workspace, GitHub, Telegram
-
-### **Setup Rápido:**
-```bash
-# 1. Clonar repo
-git clone https://github.com/Jaimemprendedor2/OpenClaw.git
-cd OpenClaw
-
-# 2. Instalar dependencias
-npm install -g openclaw@latest
-
-# 3. Configurar entorno
-cp config/openclaw.json ~/.openclaw/
-export GPG_PASSPHRASE='tu_passphrase'
-gpg --batch --passphrase "$GPG_PASSPHRASE" --decrypt config/.env.gpg > ~/.openclaw/.env
-
-# 4. Iniciar
-openclaw gateway start
-```
-
-**Guía completa:** [SETUP.md](SETUP.md)
+### `skills/`
+- Skills instaladas desde ClawHub
+- `jx76-gog/` — Google Workspace CLI (instalada)
 
 ---
 
-## 🛠️ **Características**
+## 🔄 Flujo de Trabajo
 
-### **✅ Implementado:**
-- **Personalidad completa** (Donna 🦞) - directa, práctica, en español
-- **Sistema de memoria** - diario + largo plazo
-- **Backup encriptado** - GPG AES256, automático semanal
-- **Health checks** - verificación automática diaria
-- **Repo organizado** - estructura profesional, documentada
-- **Seguridad básica** - auditorías, .gitignore robusto
+### **Diario:**
+1. Leer `SOUL.md` y `USER.md` al iniciar
+2. Actualizar `memory/YYYY-MM-DD.md`
+3. Revisar `HEARTBEAT.md` para tareas periódicas
 
-### **🚧 En Desarrollo:**
-- **Google Workspace integration** (skill `gog`)
-- **Content marketing automation**
-- **Competitor intelligence system**
-- **Multi-agent coordination**
+### **Semanal:**
+1. Revisar y actualizar `MEMORY.md` desde notas diarias
+2. Hacer backup a `backups/`
+3. Commit y push a GitHub
 
-### **📅 Planeado:**
-- **CI/CD pipeline** (GitHub Actions)
-- **Advanced monitoring** y alerting
-- **Disaster recovery** automatizado
-- **Performance optimization**
+### **Mensual:**
+1. Auditoría de seguridad (`SECURITY.md`)
+2. Revisar estructura y organización
+3. Limpiar archivos temporales
 
 ---
 
-## 🔐 **Seguridad**
+## 🔐 Archivos que me Hacen Único
 
-### **Encriptación:**
-- **Backups:** GPG AES256 (scripts/backup-encrypted-weekly.sh)
-- **Secrets:** .env.gpg encriptado en repo
-- **Comunicación:** TLS/HTTPS para todas las APIs
+**Core (no reemplazables):**
+- `SOUL.md` — Mi personalidad y estilo
+- `IDENTITY.md` — Quién soy
+- `USER.md` — Conocimiento de Jaime
+- `memory/` — Historia y contexto
 
-### **Control de Acceso:**
-- **Repo:** GitHub privado
-- **Tokens:** Scope mínimo requerido
-- **Canales:** Telegram con allowlist
-- **Gateway:** Solo localhost (127.0.0.1)
-
-### **Monitoreo:**
-- **Health checks** diarios (scripts/health-check.sh)
-- **Security audits** mensuales (openclaw security audit)
-- **Backup verification** semanal
-- **Log monitoring** básico
-
-**Checklist completo:** [SECURITY.md](SECURITY.md)
+**Configuración:**
+- Configuraciones OAuth (Google, etc.)
+- API keys de servicios conectados
+- Preferencias específicas de skills
 
 ---
 
-## 📈 **Roadmap**
+## 📊 Estado Actual
 
-### **Q2 2026 (Abril-Junio):** Foundation + Core Automation
-- ✅ Setup inicial + seguridad
-- 🚧 Google Workspace integration
-- 📅 Email/calendar automation
-- 📅 Document management system
+**Skills instaladas:**
+- ✅ `jx76-gog` — Google Workspace (pendiente OAuth)
+- ✅ 6 skills bundled listas
 
-### **Q3 2026 (Julio-Septiembre):** Growth Tools
-- 📅 Content marketing automation
-- 📅 Competitor intelligence
-- 📅 Lead generation system
+**Conexiones:**
+- ✅ Telegram configurado
+- ⏳ Google Workspace (pendiente)
+- ⏳ Otras herramientas según necesidades
 
-### **Q4 2026 (Octubre-Diciembre):** Advanced AI
-- 📅 Decision support tools
-- 📅 Predictive analytics
-- 📅 Multi-agent system
-
-**Roadmap detallado:** [ROADMAP.md](ROADMAP.md)
+**Seguridad:**
+- ✅ Workspace en GitHub privado
+- ✅ .gitignore para excluir sensibles
+- ✅ Auditoría documentada en `SECURITY.md`
 
 ---
 
-## 🤝 **Contribuir**
+## 🚀 Próximos Pasos
 
-### **Para Jaime:**
-1. **Issues:** Reportar bugs o sugerencias
-2. **Feedback:** Comunicar necesidades cambiantes
-3. **Testing:** Probar nuevas features
-4. **Priorización:** Guiar roadmap basado en negocio
-
-### **Para desarrolladores (futuro):**
-1. **Fork** el repositorio
-2. **Branch** por feature: `git checkout -b feature/awesome-feature`
-3. **Commit** cambios: `git commit -s -m "feat: add awesome feature"`
-4. **Push:** `git push origin feature/awesome-feature`
-5. **Pull Request**
-
-### **Convenciones:**
-- **Commits:** [Conventional Commits](https://www.conventionalcommits.org/)
-- **Branching:** Git Flow simplificado
-- **Documentación:** Mantener docs/ actualizado
-- **Testing:** Scripts en scripts/ para validación
+1. Configurar OAuth de Google para `gog`
+2. Conectar herramientas de Jaime (Granola, etc.)
+3. Instalar skills según prioridades en `SKILLS_RECOMMENDATIONS.md`
+4. Automatizar backups y mantenimiento
 
 ---
 
-## 🚨 **Soporte y Mantenimiento**
-
-### **Problemas Comunes:**
-- **Gateway no inicia:** `journalctl -u openclaw-gateway -f`
-- **Backup falla:** Ver `~/backup-weekly.log`
-- **Health check falla:** Ejecutar `scripts/health-check.sh`
-- **Git sync issues:** Verificar token/permisos GitHub
-
-### **Mantenimiento Regular:**
-- **Diario:** Health checks automáticos
-- **Semanal:** Backup verification
-- **Mensual:** Security audit + updates
-- **Trimestral:** Disaster recovery test
-
-### **Escalación:**
-1. **Automatizado:** Scripts de recovery en `scripts/`
-2. **Documentación:** `docs/SETUP.md` y `docs/SECURITY.md`
-3. **Agente:** Donna 🦞 (via Telegram)
-4. **Repo:** [GitHub Issues](https://github.com/Jaimemprendedor2/OpenClaw/issues)
-
----
-
-## 📊 **Métricas**
-
-### **Actual (Abril 2026):**
-- **Uptime:** 100% (desde deploy)
-- **Backup success rate:** 100%
-- **Health check passes:** 100%
-- **Security issues:** 0 críticos
-
-### **Objetivos:**
-- **Time saved:** > 10 horas/semana
-- **Automation rate:** > 50% de tareas repetitivas
-- **User satisfaction:** > 4.5/5
-- **System reliability:** > 99.9% uptime
-
----
-
-## 📞 **Contacto**
-
-### **Agente:**
-- **Nombre:** Donna 🦞
-- **Canal principal:** Telegram (@Jaimemprendedor)
-- **Idioma:** Español (código/instrucciones en inglés)
-- **Estilo:** Directo, práctico, orientado a resultados
-
-### **Usuario:**
-- **Nombre:** Jaime
-- **GitHub:** [Jaimemprendedor2](https://github.com/Jaimemprendedor2)
-- **Negocios:** Emprendedor SaaS
-- **Herramientas:** Google Workspace, Notion, Granola.ai
-
-### **Repositorio:**
-- **URL:** https://github.com/Jaimemprendedor2/OpenClaw
-- **License:** Privado
-- **Status:** Producción activa
-- **Maintainer:** Donna 🦞
-
----
-
-## 📜 **License y Atribución**
-
-### **OpenClaw:**
-- **Software:** [OpenClaw](https://github.com/openclaw/openclaw) - MIT License
-- **Skills:** Varias licenses (MIT, Apache 2.0, etc.)
-- **Documentación:** CC BY-SA 4.0
-
-### **Este repo:**
-- **Configuración:** Propietario (Jaime)
-- **Personalidad:** Única a Donna 🦞
-- **Memoria:** Datos personales (privado)
-
-### **Atribución:**
-- Agradecimientos al equipo de OpenClaw
-- Comunidad de ClawHub por skills
-- Contributors de código abierto
-
----
-
-*"Un agente no es software, es una extensión de la voluntad humana."*  
-*— Donna 🦞*
-
----
-
-**Última actualización:** 2026-04-05  
-**Versión:** 1.0.0  
-**Por:** Donna 🦞
+*Última actualización: 2026-04-05*  
+*Por: Donna 🦞*
