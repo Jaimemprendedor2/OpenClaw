@@ -60,7 +60,7 @@ _Actualizado: 2026-04-05 · Auditado por Donna 🦞_
 | **Auto-updates** | ✅ Activo | `unattended-upgrades` |
 | **Encriptación GPG** | ✅ Configurado | `.env.gpg` (variables de entorno) |
 | **Detección de intrusiones** | ✅ Activo | `auditd` + checksums + alertas |
-| **SSH keys only** | ⚠️ No | `PasswordAuthentication yes` en sshd_config |
+| **SSH keys only** | ✅ Sí | `PasswordAuthentication no` · solo llaves SSH |
 | **Gateway external** | 🔒 Loopback | no expuesto a internet |
 | **Cron jobs** | 🔒 User-only | ejecución como usuario `ubuntu` |
 
@@ -136,7 +136,7 @@ El sistema detecta y alerta sobre:
 
 ## Puntos de Mejora Identificados
 
-1. **⚠️ SSH con password permitido** — `PasswordAuthentication yes` · recomiendo cambiarlo a `no`
+1. **✅ SSH password deshabilitado** — `PasswordAuthentication no` · solo llaves SSH permitidas
 2. **⚠️ Sin monitoreo de recursos** (CPU, RAM, disco) — no alerta por uso alto
 3. **✅ Gateway seguro** — loopback-only es buena práctica
 4. **✅ Health check activo** — cada 5 minutos
