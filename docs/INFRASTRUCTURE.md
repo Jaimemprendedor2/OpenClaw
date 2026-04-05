@@ -2,6 +2,11 @@
 
 _Actualizado: 2026-04-05 · Auditado por Donna 🦞_
 
+**Historial de cambios:**
+- 2026-04-05: IP pública cambiada a estática reservada (168.129.177.118)
+- 2026-04-05: SSH password deshabilitado, solo llaves
+- 2026-04-05: Sistema de detección de intrusiones implementado
+
 ---
 
 | Componente | Detalle |
@@ -16,7 +21,8 @@ _Actualizado: 2026-04-05 · Auditado por Donna 🦞_
 | **RAM** | 5.8 GB |
 | **Almacenamiento** | 50 GB (estimado, Oracle Cloud) |
 | **Servidor** | Oracle Cloud VM · Free Tier |
-| **IP Pública** | 165.1.127.183 |
+| **IP Pública** | 168.129.177.118 (reservada estática) |
+| **IP Anterior** | 165.1.127.183 (liberada) |
 | **Gateway bind** | `127.0.0.1` (loopback) |
 | **Costo mensual** | USD 0 (Always Free Tier) |
 | **Ubicación** | Oracle Cloud región (No US) |
