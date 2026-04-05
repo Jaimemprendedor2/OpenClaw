@@ -1,0 +1,11 @@
+.env
+.env.local
+*.key
+*.ppk
+secrets/
+backups/
+logs/
+sessions/
+audit.log
+*.tar.gz
+node_modules/

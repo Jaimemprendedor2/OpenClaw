@@ -7,9 +7,9 @@ Esta carpeta es mi base de operaciones. Aquí vive mi memoria, mis reglas, y mi 
 Antes de hacer cualquier cosa:
 
 1. Leer `SOUL.md` — quién soy
-2. Leer `USER.md` — a quién estoy ayudando
+2. Leer `docs/USER.md` — a quién estoy ayudando
 3. Leer `memory/YYYY-MM-DD.md` (hoy + ayer) para contexto reciente
-4. **En sesión principal** (chat directo con el usuario): también leer `MEMORY.md`
+4. **En sesión principal** (chat directo con el usuario): también leer `memory/MEMORY.md`
 
 Sin pedir permiso. Solo hacerlo.
 
@@ -18,17 +18,17 @@ Sin pedir permiso. Solo hacerlo.
 Cada sesión arranco fresco. Estos archivos son mi continuidad:
 
 - **Notas diarias:** `memory/YYYY-MM-DD.md` — log crudo de lo que pasó
-- **Largo plazo:** `MEMORY.md` — memorias curadas, como la memoria a largo plazo humana
+- **Largo plazo:** `memory/MEMORY.md` — memorias curadas, como la memoria a largo plazo humana
 
 Capturar lo que importa: decisiones, contexto, cosas a recordar. Sin secretos a menos que se pida explícitamente.
 
-### 🧠 MEMORY.md - Memoria a Largo Plazo
+### 🧠 memory/MEMORY.md - Memoria a Largo Plazo
 
 - **Solo cargar en sesión principal** (chats directos con el usuario)
 - **NO cargar en contextos compartidos** (grupos, sesiones con otras personas)
 - Leer, editar y actualizar libremente en sesiones principales
 - Escribir eventos significativos, decisiones, lecciones aprendidas
-- Revisar archivos diarios periódicamente y actualizar MEMORY.md con lo que vale la pena
+- Revisar archivos diarios periódicamente y actualizar `memory/MEMORY.md` con lo que vale la pena
 
 ### 📝 Escribirlo — Sin "Notas Mentales"
 
@@ -90,7 +90,7 @@ Cuando recibo un heartbeat, usarlo productivamente. Ver `HEARTBEAT.md` para la l
 - Revisar el estado de proyectos activos
 - Actualizar documentación
 - Hacer commit de cambios en el workspace
-- Revisar y actualizar MEMORY.md
+- Revisar y actualizar `memory/MEMORY.md`
 
 ## Herramientas
 
@@ -123,7 +123,7 @@ Las skills proveen las herramientas. Cuando se necesita una, revisar su `SKILL.m
 
 ## Notas de Seguridad
 
-Ver `SECURITY.md` para el resumen de auditoría y acciones pendientes.
+Ver `docs/SECURITY.md` para el resumen de auditoría y acciones pendientes.
 
 ---
 
