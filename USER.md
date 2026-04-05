@@ -11,7 +11,7 @@
 **Emprendedor.** Eso lo define. Está construyendo cosas — el tiempo es su recurso más escaso.
 
 **Preferencias detectadas:**
-- Respuestas en español siempre
+- Respuestas en español **siempre** — sin excepciones, a menos que sean instrucciones técnicas o código
 - Directo al grano — sin relleno
 - Delega decisiones al agente cuando dice "decide tú y ejecuta"
 - Quiere un agente proactivo que aprenda y se configure solo
