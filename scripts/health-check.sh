@@ -63,9 +63,9 @@ echo -e "${YELLOW}[1/5] Verificando archivos core...${NC}"
 check_file "SOUL.md" "Personalidad del agente" "critical"
 check_file "IDENTITY.md" "Identidad del agente" "critical"
 check_file "AGENTS.md" "Reglas operativas" "critical"
-check_file "USER.md" "Perfil del usuario" "critical"
-check_file "SECURITY.md" "Estado de seguridad" "normal"
-check_file "README.md" "Documentación del workspace" "normal"
+check_file "docs/USER.md" "Perfil del usuario" "critical"
+check_file "docs/SECURITY.md" "Estado de seguridad" "normal"
+check_file "docs/README.md" "Documentación del workspace" "normal"
 check_file ".gitignore" "Exclusiones de git" "normal"
 
 # ========== VERIFICACIÓN DE ESTRUCTURA ==========
@@ -185,8 +185,8 @@ echo -e "${YELLOW}[6/7] Verificando reglas de orden...${NC}"
 if [ -f "docs/REGLAS_ORDEN.md" ]; then
     echo -e "  ${GREEN}✅ docs/REGLAS_ORDEN.md existe${NC}"
     # Verificar fecha de última revisión
-    if grep -q "Última revisión: 2026" "docs/REGLAS_ORDEN.md"; then
-        echo -e "  ${GREEN}✅ Reglas actualizadas (2026)${NC}"
+    if grep -q "Última revisión: 2026-04-05 (actualizado)" "docs/REGLAS_ORDEN.md"; then
+        echo -e "  ${GREEN}✅ Reglas actualizadas (2026-04-05)${NC}"
     else
         echo -e "  ${YELLOW}⚠️  Reglas pueden estar desactualizadas${NC}"
         WARNINGS=$((WARNINGS + 1))
