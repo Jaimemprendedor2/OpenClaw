@@ -93,6 +93,11 @@ Pulse → Focus → Atlas → Skopia → Vantage → Nexus → Metron → Agora 
 
 ---
 
+## 🔗 Contexto relevante
+
+- EIVA (ecosistema donde Jaime tuvo rol hasta dic 2025) es cliente natural/potencial de Ecosistemanet
+- **ValpoEmprende 2026** (EIVA + Socialab): Jaime participa en el equipo — caso de uso concreto y próximo para probar módulos
+
 ## 📌 Preguntas abiertas / vacíos
 
 - ¿Cuál es el primer cliente o caso de uso piloto activo?

@@ -41,10 +41,13 @@ Incubadora de líderes empresariales con metodología propia (NovoTraining). Nac
 
 **Impacto:** 6.000+ emprendedores formados · Presencia en Chile, Panamá, México, Colombia, Argentina · >USD 2,4M gestionados.
 
-### EIVA (Director de Ecosistema, abr 2025–presente)
+### EIVA (Director de Ecosistema, abr–dic 2025 — finalizado)
 Ecosistema de Emprendimiento impulsado por Innovación, Región de Valparaíso. Antes fue Director Ejecutivo (dic 2021–mar 2025) y miembro del Directorio (ene 2018–nov 2021).
 
-**2025:** 1º lugar "Compromiso con el Ecosistema" (ecosistemas intermedios) + beca BID para pasantía en Brasil.
+**2025:** 1º lugar "Compromiso con el Ecosistema" (ecosistemas intermedios) + beca BID para pasantía en Brasil. Rol finalizado en diciembre 2025.
+
+### ValpoEmprende 2026 (participación activa)
+Programa impulsado por **EIVA y Socialab**. Jaime participa dentro del equipo en 2026. Continuación del ValpoEmprende 2025 (3.500 jóvenes encuestados, 100+ startups, 10 seleccionadas, foco en Seguridad/Sostenibilidad/Logística).
 
 ---
 

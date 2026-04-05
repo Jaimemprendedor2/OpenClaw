@@ -26,7 +26,8 @@ _2026-04-05: Archivo creado. Ver `memory/2026-04-05.md` para detalles completos 
 **Proyectos actuales:**
 - **Ecosistemanet** (cofundador, dic 2025): Suite modular de gestión de ecosistemas (Atlas, Pulse, Nexus, Focus, Vantage, Metron, Skopia, Agora). Su apuesta más tech y escalable. Propuesta: reducir incertidumbre en ecosistemas complejos.
 - **Housenovo** (CEO, 2013): Incubadora de líderes empresariales. Metodología NovoTraining (mindset, escucha ontológica, feedback). 6.000+ emprendedores formados en Chile, Panamá, México, Colombia.
-- **EIVA** (Director de Ecosistema, abr 2025): Ecosistema regional Valparaíso. 2025: 1º lugar GEIAL + beca BID.
+- **EIVA** (Director de Ecosistema, abr–dic 2025, finalizado): 1º lugar GEIAL + beca BID. Rol cerrado dic 2025.
+- **ValpoEmprende 2026** (participación activa en equipo): impulsado por EIVA + Socialab.
 
 **Trayectoria clave:** ASECH consejero regional 13 años · ChileCowork vicepresidente · GU2i · TRIE · SenseTech · HuertApp · PRODEM/GEIAL (internacional)
 
