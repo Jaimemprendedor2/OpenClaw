@@ -19,9 +19,22 @@ _2026-04-05: Archivo creado. Ver `memory/2026-04-05.md` para detalles completos 
 
 ---
 
-## 👤 **Sobre Jaime (Jaimemprendedor)**
+## 👤 **Sobre Jaime González Vergara (@jaimemprendedor)**
 
-**Actualizar con información profesional cuando se proporcione.**
+**Emprendedor e innovador.** 15+ años articulando ecosistemas de emprendimiento en Valparaíso, Chile y Latinoamérica. Técnico en Electrónica (UTFSM) + Coach Ontológico (Newfield/Rafael Echeverría). Construye en equipo, con visión territorial y foco en impacto real.
+
+**Proyectos actuales:**
+- **Ecosistemanet** (cofundador, dic 2025): Suite modular de gestión de ecosistemas (Atlas, Pulse, Nexus, Focus, Vantage, Metron, Skopia, Agora). Su apuesta más tech y escalable. Propuesta: reducir incertidumbre en ecosistemas complejos.
+- **Housenovo** (CEO, 2013): Incubadora de líderes empresariales. Metodología NovoTraining (mindset, escucha ontológica, feedback). 6.000+ emprendedores formados en Chile, Panamá, México, Colombia.
+- **EIVA** (Director de Ecosistema, abr 2025): Ecosistema regional Valparaíso. 2025: 1º lugar GEIAL + beca BID.
+
+**Trayectoria clave:** ASECH consejero regional 13 años · ChileCowork vicepresidente · GU2i · TRIE · SenseTech · HuertApp · PRODEM/GEIAL (internacional)
+
+**Formación clave:** Coach Ontológico Newfield · BID-PRODEM · Diplomado Gestión UAI · Luditools facilitador
+
+**Reconocimientos:** Joven Líder 2016 (Fundación Piensa) · Premio Don Bosco
+
+**Portafolio personal:** Jaime (marca paraguas) → Housenovo (liderazgo/transformación) + Ecosistemanet (plataforma/infraestructura digital)
 
 ---
 
