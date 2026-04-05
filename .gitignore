@@ -1,51 +1,11 @@
-# OpenClaw Workspace Git Ignore
-
-# Archivos temporales
-*.tmp
-*.temp
-*.log
-
-# Credenciales y secrets
-client_secret*.json
-*.key
-*.pem
-*.crt
 .env
 .env.local
-.env.*.local
-
-# Archivos de sistema
-.openclaw/workspace-state.json
-.openclaw/sessions/
-
-# Cache y datos temporales
-.cache/
+*.key
+*.ppk
+secrets/
+backups/
+logs/
+sessions/
+audit.log
+*.tar.gz
 node_modules/
-
-# Editor/IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Archivos grandes/binarios
-*.bin
-*.exe
-*.dll
-*.so
-*.dylib
-
-# Documentos temporales
-~$*.docx
-~$*.xlsx
-~$*.pptx
-
-# Backups
-*.bak
-*.backup
-
-# macOS
-.DS_Store
-
-# Linux
-Thumbs.db
