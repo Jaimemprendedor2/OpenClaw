@@ -17,6 +17,8 @@ _Archivo para memorias curadas a largo plazo. Cargar solo en sesión principal (
 
 _2026-04-05: Archivo creado. Ver `memory/2026-04-05.md` para detalles completos del setup inicial._
 
+_2026-04-06: Configuración de modelos actualizada por Jaime. Modelo primario: Claude Sonnet 4.6, fallbacks: DeepSeek Chat y DeepSeek Reasoner. Repositorio Git sincronizado con configuración personalizada._
+
 ---
 
 ## 👤 **Sobre Jaime González Vergara (@jaimemprendedor)**
@@ -45,12 +47,14 @@ _2026-04-05: Archivo creado. Ver `memory/2026-04-05.md` para detalles completos 
 - Gateway: local loopback (127.0.0.1)
 - Canal principal: Telegram
 - Agente: Donna 🦞
-- Modelo: DeepSeek
+- Modelo primario: anthropic/claude-sonnet-4-6
+- Modelos fallback: deepseek/deepseek-chat, deepseek/deepseek-reasoner
 
 **Seguridad:**
 - Repo GitHub: `Jaimemprendedor2/OpenClaw`
 - Token de acceso configurado
 - Auditoría: 0 críticos, 5 advertencias
+- API keys: DeepSeek configurada en `.env`, Claude pendiente (usando auth existente?)
 
 **Skills instaladas:**
 - `jx76-gog` — Google Workspace (pendiente OAuth)
@@ -79,5 +83,5 @@ _(Actualizar con automatizaciones implementadas)_
 
 ---
 
-*Actualizado: 2026-04-05*  
+*Actualizado: 2026-04-06*  
 *Por: Donna 🦞*

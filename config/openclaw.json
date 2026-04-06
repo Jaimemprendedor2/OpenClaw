@@ -10,9 +10,9 @@
         "deepseek/deepseek-reasoner": {}
       },
       "model": {
-        "primary": "deepseek/deepseek-chat",
+        "primary": "anthropic/claude-sonnet-4-6",
         "fallbacks": [
-          "anthropic/claude-sonnet-4-6",
+          "deepseek/deepseek-chat",
           "deepseek/deepseek-reasoner"
         ]
       }
