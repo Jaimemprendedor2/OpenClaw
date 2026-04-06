@@ -1,0 +1,52 @@
+{
+  "telegram": {
+    "botToken": "TU_BOT_TOKEN_AQUI",
+    "chatId": "TU_CHAT_ID_AQUI",
+    "enabled": true
+  },
+  "server": {
+    "port": 8080,
+    "host": "0.0.0.0",
+    "sessionDir": "./wwebjs_auth",
+    "logFile": "/tmp/whatsapp-server.log",
+    "maxPendingMessages": 100
+  },
+  "whatsapp": {
+    "clientId": "default",
+    "headless": true,
+    "chromiumPath": "auto",
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ],
+    "puppeteerOptions": {
+      "executablePath": "auto"
+    }
+  },
+  "tunnel": {
+    "enabled": true,
+    "subdomain": "openclaw-wa",
+    "localHost": "http://localhost:8080",
+    "logFile": "/tmp/whatsapp-tunnel.log"
+  },
+  "notifications": {
+    "incomingMessages": true,
+    "connectionEvents": true,
+    "errors": true,
+    "debug": false
+  },
+  "security": {
+    "allowedNumbers": [],
+    "blockedNumbers": [],
+    "requireAuthorization": true,
+    "authorizationTimeout": 300
+  },
+  "features": {
+    "autoReconnect": true,
+    "reconnectDelay": 5000,
+    "qrAsImage": true,
+    "webInterface": true,
+    "apiEnabled": true
+  }
+}

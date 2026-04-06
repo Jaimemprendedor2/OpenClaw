@@ -1,0 +1,54 @@
+{
+  "name": "whatsapp-connect-openclaw",
+  "version": "1.0.0",
+  "description": "Skill para conectar OpenClaw a WhatsApp Web cuando el plugin oficial falla",
+  "main": "server-enhanced.js",
+  "scripts": {
+    "start": "node server-enhanced.js",
+    "tunnel": "node tunnel.js",
+    "dev": "nodemon server-enhanced.js",
+    "test": "echo \"No tests yet\" && exit 0",
+    "postinstall": "echo '✅ Dependencias instaladas. Configura config/whatsapp-config.json'"
+  },
+  "keywords": [
+    "openclaw",
+    "whatsapp",
+    "whatsapp-web",
+    "automation",
+    "bot",
+    "assistant"
+  ],
+  "author": "Donna 🦞 <donna@openclaw.ai>",
+  "license": "MIT",
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "qrcode": "^1.5.3",
+    "express": "^4.18.2",
+    "localtunnel": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jaimemprendedor2/OpenClaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaimemprendedor2/OpenClaw/issues"
+  },
+  "homepage": "https://github.com/Jaimemprendedor2/OpenClaw#readme",
+  "openclaw": {
+    "skill": true,
+    "category": "channels",
+    "compatibility": ">=2026.4.5",
+    "requires": [
+      "chromium",
+      "telegram-bot"
+    ]
+  }
+}
