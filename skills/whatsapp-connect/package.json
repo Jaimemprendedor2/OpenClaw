@@ -1,14 +1,17 @@
 {
   "name": "whatsapp-connect-openclaw",
-  "version": "1.0.0",
-  "description": "Skill para conectar OpenClaw a WhatsApp Web cuando el plugin oficial falla",
-  "main": "server-enhanced.js",
+  "version": "2.0.0",
+  "description": "Sistema completo WhatsApp para OpenClaw: servidor robusto, bot de reglas inteligente, monitoreo automático y funciones especiales Eroika",
+  "main": "server-robust.js",
   "scripts": {
-    "start": "node server-enhanced.js",
+    "start": "node server-robust.js",
+    "start-all": "./start-all.sh",
+    "rules": "node whatsapp-rules-eroika-especial-fixed.js",
     "tunnel": "node tunnel.js",
-    "dev": "nodemon server-enhanced.js",
+    "monitor": "./monitor-services.sh",
+    "dev": "nodemon server-robust.js",
     "test": "echo \"No tests yet\" && exit 0",
-    "postinstall": "echo '✅ Dependencias instaladas. Configura config/whatsapp-config.json'"
+    "postinstall": "echo '✅ Dependencias instaladas. Configuración en server-robust.js (líneas 15-16) y whatsapp-rules-final.json'"
   },
   "keywords": [
     "openclaw",

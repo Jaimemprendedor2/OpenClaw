@@ -1,0 +1,340 @@
+{
+  "listenMode": "whitelist",
+  "whitelist": [
+    "120363424931585227@g.us",
+    "Equipo | Ecosistemanet"
+  ],
+  "notifyFormat": "simple",
+  "maxPreviewChars": 30,
+  "groupThreshold": 10,
+  "securityResponse": "Le aviso a Jaime y te respondo",
+  "storeConversations": true,
+  "conversations": {
+    "120363424931585227@g.us": [
+      {
+        "from": "Maxi Araneda",
+        "body": "Super, acabo de enviar agenda Javi",
+        "timestamp": 1775511377972
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Este es el grupo donna",
+        "timestamp": 1775511407976
+      },
+      {
+        "from": "Javier Russo",
+        "body": "donna summer",
+        "timestamp": 1775511407976
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Donnatelo",
+        "timestamp": 1775511407977
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Donna Stark",
+        "timestamp": 1775511407977
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Hola",
+        "timestamp": 1775511407978
+      },
+      {
+        "from": "Javier Russo",
+        "body": "Agendamos Max",
+        "timestamp": 1775511437974
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Super, acabo de enviar agenda Javi",
+        "timestamp": 1775511438789
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Este es el grupo donna",
+        "timestamp": 1775511469646
+      },
+      {
+        "from": "Javier Russo",
+        "body": "donna summer",
+        "timestamp": 1775511470463
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Donnatelo",
+        "timestamp": 1775511471246
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Donna Stark",
+        "timestamp": 1775511472009
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Hola",
+        "timestamp": 1775511472809
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Hola Donna",
+        "timestamp": 1775511473604
+      },
+      {
+        "from": "Javier Russo",
+        "body": "Agendamos Max",
+        "timestamp": 1775511497984
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Super, acabo de enviar agenda Javi",
+        "timestamp": 1775511498792
+      },
+      {
+        "from": "Javier Russo",
+        "body": "ahhh era un agente, pensé que te ponias con unos donuts",
+        "timestamp": 1775511614036
+      },
+      {
+        "from": "Javier Russo",
+        "body": "XD",
+        "timestamp": 1775511614840
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "jajaja",
+        "timestamp": 1775511615665
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Buen nombre si",
+        "timestamp": 1775511616469
+      },
+      {
+        "from": "Javier Russo",
+        "body": "expectativa v/s realidad XD",
+        "timestamp": 1775511617278
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Este es el grupo donna",
+        "timestamp": 1775511794901
+      },
+      {
+        "from": "Javier Russo",
+        "body": "donna summer",
+        "timestamp": 1775511795698
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Donnatelo",
+        "timestamp": 1775511796465
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Donna Stark",
+        "timestamp": 1775511797291
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Hola",
+        "timestamp": 1775511798091
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Hola Donna",
+        "timestamp": 1775511798857
+      },
+      {
+        "from": "Javier Russo",
+        "body": "Agendamos Max",
+        "timestamp": 1775512122677
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Super, acabo de enviar agenda Javi",
+        "timestamp": 1775512123451
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Este es el grupo donna",
+        "timestamp": 1775512124258
+      },
+      {
+        "from": "Javier Russo",
+        "body": "donna summer",
+        "timestamp": 1775512125083
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Donnatelo",
+        "timestamp": 1775512125882
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Donna Stark",
+        "timestamp": 1775512126638
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Hola",
+        "timestamp": 1775512127439
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Hola Donna",
+        "timestamp": 1775512128214
+      },
+      {
+        "from": "Javier Russo",
+        "body": "ahhh era un agente, pensé que te ponias con unos donuts",
+        "timestamp": 1775512129022
+      },
+      {
+        "from": "Javier Russo",
+        "body": "XD",
+        "timestamp": 1775512129796
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "jajaja",
+        "timestamp": 1775512130574
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Buen nombre si",
+        "timestamp": 1775512131365
+      },
+      {
+        "from": "Javier Russo",
+        "body": "expectativa v/s realidad XD",
+        "timestamp": 1775512132145
+      },
+      {
+        "from": "Javier Russo",
+        "body": "Hello Donna Whats going",
+        "timestamp": 1775512718528,
+        "chileTime": "17:58"
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Excelente info!",
+        "timestamp": 1775513795173
+      },
+      {
+        "from": "Paulina Araneda P.",
+        "body": "Buena!",
+        "timestamp": 1775513825201
+      },
+      {
+        "from": "Javier Russo",
+        "body": "BKN",
+        "timestamp": 1775513855204
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Que tal els parece Donna?",
+        "timestamp": 1775514005221
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "ya logre que el agente Open Claw este corriendoe stable y que se conecte a algunas herramientas.",
+        "timestamp": 1775514035228
+      },
+      {
+        "from": "Jaimemprendedor",
+        "body": "Gracias Donna",
+        "timestamp": 1775514256497
+      },
+      {
+        "from": "Javier Russo",
+        "body": "XD",
+        "timestamp": 1775514286518
+      },
+      {
+        "from": "Paulina Araneda P.",
+        "body": "Bienvenida al grupo Donna!",
+        "timestamp": 1775514286518
+      },
+      {
+        "from": "Maxi Araneda",
+        "body": "Mañana tengo reunión de prospección comercial con Alejandro Velásquez del Centro de Innovación, por confimar si es virtual o presencial...",
+        "timestamp": 1775514664119
+      }
+    ],
+    "status@broadcast": [
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511227951
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511287961
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511347971
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511407975
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511469646
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775511794901
+      },
+      {
+        "from": "Myriam",
+        "body": "https://open.spotify.com/track/293oIkJ3gazekEi8rl5fjl?si=f27-S-o_QqSILmfM0Ya2cg",
+        "timestamp": 1775512124258
+      }
+    ],
+    "44852393848872@lid": [
+      {
+        "from": "Jaimemprendedor",
+        "body": "Hola",
+        "timestamp": 1775512302834
+      }
+    ],
+    "250457293377666@lid": [
+      {
+        "from": "250457293377666@lid",
+        "body": "",
+        "timestamp": 1775522499701
+      }
+    ],
+    "225228521234506@lid": [
+      {
+        "from": "225228521234506@lid",
+        "body": "",
+        "timestamp": 1775522499702
+      }
+    ]
+  },
+  "messageCounters": {
+    "120363424931585227@g.us": 4
+  },
+  "lastChecked": 1775522499702,
+  "eroikaSettings": {
+    "notify": true,
+    "summaries": false,
+    "format": "simple",
+    "maxPreviewChars": 30
+  },
+  "processedMessages": {
+    "false_250457293377666@lid_3EB0FFF450384C08F1EC": 1775522499701,
+    "false_225228521234506@lid_3EB0E95309F098066B2D": 1775522499702
+  },
+  "lastProcessedTime": 1775511715641
+}

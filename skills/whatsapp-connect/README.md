@@ -1,335 +1,271 @@
-# WhatsApp Connect Skill for OpenClaw
+# WhatsApp Connect Skill v2.0.0 for OpenClaw
 
 ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![OpenClaw](https://img.shields.io/badge/OpenClaw-000000?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-2.0.0-blue)
 
-Una skill completa para conectar OpenClaw a WhatsApp Web cuando el plugin oficial falla.
+**Sistema completo WhatsApp para OpenClaw** con servidor robusto, bot de reglas inteligente, monitoreo automático y funciones especiales para grupos.
 
 ## 🎯 **¿Por qué esta skill?**
 
-El plugin oficial de WhatsApp de OpenClaw (v2026.4.5) tiene un bug crítico:
+El plugin oficial de WhatsApp de OpenClaw (v2026.4.5) tiene un bug crítico. Esta skill provee una **solución completa y mejorada** con:
+
+### ✅ **Soluciona:**
+1. **Bug del plugin oficial** → `missing register/activate export`
+2. **Inestabilidad de sesiones** → Reconexión automática con verificación real
+3. **Falta de monitoreo** → Sistema automático con cron (5 minutos)
+4. **Respuestas no contextuales** → Bot de reglas con análisis inteligente
+5. **Registro manual de solicitudes** → Sistema automático para preguntas importantes
+6. **Notificaciones con localhost** → Solo URLs públicas (loca.it)
+
+### ✅ **Nuevas características (v2.0.0):**
+- **Servidor robusto** → Reconexión automática, backoff exponencial
+- **Bot de reglas inteligente** → Análisis contextual, respuestas automáticas
+- **Sistema de monitoreo** → Cron cada 5 minutos, reinicio automático
+- **Funciones Eroika** → Respuestas personalizadas, registro de solicitudes
+- **Sistema de tunnel** → URLs públicas automáticas
+- **Formato WhatsApp real** → Negrita, cursiva, tachado, código
+
+## 🏗️ **Arquitectura**
+
 ```
-[plugins] whatsapp missing register/activate export
+whatsapp-connect/
+├── server-robust.js      # Servidor principal MEJORADO
+├── start-all.sh          # Script de inicio completo
+├── start.sh              # Wrapper con comandos
+├── monitor-services.sh   # Monitoreo automático (cron)
+├── whatsapp-rules-eroika-especial-fixed.js  # Bot de reglas
+├── eroika-manager-ignore-self.js           # Módulo Eroika
+├── whatsapp-rules-final.json               # Configuración reglas
+├── solicitudes-jaime.json                  # Base de datos solicitudes
+├── package.json          # Dependencias
+├── SKILL.md              # Documentación completa
+└── config/              # Configuración ejemplo
 ```
 
-Esta skill provee una **solución funcional alternativa** usando `whatsapp-web.js` con:
-- ✅ Sesión persistente
-- ✅ Tunnel público via localtunnel
-- ✅ Notificaciones Telegram
-- ✅ API REST completa
-- ✅ Reconexión automática
+## 🚀 **Instalación en 5 minutos**
 
-## 📊 **Características**
-
-| Característica | Estado | Descripción |
-|----------------|--------|-------------|
-| Conexión WhatsApp | ✅ | Via whatsapp-web.js |
-| Sesión persistente | ✅ | LocalAuth, no necesita QR repetido |
-| Tunnel público | ✅ | localtunnel para acceso desde teléfono |
-| Notificaciones Telegram | ✅ | Alertas automáticas de mensajes |
-| API REST | ✅ | Endpoints para control completo |
-| Reconexión automática | ✅ | Si se desconecta, reconecta en 5s |
-| QR como imagen | ✅ | PNG servido via HTTP |
-| Página web | ✅ | Interfaz amigable con auto-refresh |
-
-## 🚀 **Instalación rápida**
-
-### 1. Clonar/copiar skill
+### **1. Copiar skill:**
 ```bash
 mkdir -p ~/whatsapp-server
 cp -r /home/ubuntu/.openclaw/workspace/skills/whatsapp-connect/* ~/whatsapp-server/
 cd ~/whatsapp-server
 ```
 
-### 2. Instalar dependencias
+### **2. Instalar dependencias:**
 ```bash
 npm install
+npm install -g localtunnel
 ```
 
-### 3. Configurar
+### **3. Configurar Telegram (editar server-robust.js líneas 15-16):**
+```javascript
+const TELEGRAM_BOT_TOKEN = 'TU_BOT_TOKEN_AQUI';
+const TELEGRAM_CHAT_ID = 'TU_CHAT_ID_AQUI';
+```
+
+### **4. Configurar monitoreo automático:**
 ```bash
-cp config/whatsapp-config.json.example config/whatsapp-config.json
-# Editar config/whatsapp-config.json con tu token de Telegram
+# Agregar a cron (cada 5 minutos)
+(crontab -l 2>/dev/null; echo "*/5 * * * * $(pwd)/monitor-services.sh") | crontab -
 ```
 
-### 4. Iniciar
+### **5. Iniciar todo:**
 ```bash
-./start.sh
+./start-all.sh
+# o usar el wrapper:
+./start.sh start
 ```
 
-## ⚙️ **Configuración detallada**
+## 🔧 **Configuración Clave**
 
-### Archivo `config/whatsapp-config.json`:
+### **Telegram (server-robust.js):**
+```javascript
+const TELEGRAM_BOT_TOKEN = '8799472381:AAGkpBP_oGE3lzghEFrHe_8CH2RVXu6LvIk';
+const TELEGRAM_CHAT_ID = '5560884037';
+```
+
+### **Puerto del servidor (server-robust.js):**
+```javascript
+const PORT = 8080;  // Cambiar si es necesario
+```
+
+### **Reglas de notificación (whatsapp-rules-final.json):**
 ```json
 {
-  "telegram": {
-    "botToken": "1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-    "chatId": "5560884037"
-  },
-  "server": {
-    "port": 8080,
-    "sessionDir": "./wwebjs_auth",
-    "logFile": "/tmp/whatsapp-server.log"
-  },
-  "whatsapp": {
-    "clientId": "default",
-    "headless": true,
-    "chromiumPath": "auto"
-  },
-  "tunnel": {
-    "enabled": true,
-    "subdomain": "openclaw-wa"
-  }
+  "listenMode": "whitelist",
+  "whitelist": ["120363424931585227@g.us", "Equipo | Ecosistemanet"],
+  "notifyFormat": "simple",
+  "securityResponse": "Le aviso a Jaime y te respondo"
 }
 ```
 
-### Variables de entorno (opcional):
+## 📱 **Uso**
+
+### **Comandos principales:**
 ```bash
-export TELEGRAM_BOT_TOKEN="tu_token"
-export TELEGRAM_CHAT_ID="tu_chat_id"
-export WHATSAPP_PORT=8080
+# Iniciar sistema completo
+./start.sh start
+
+# Ver estado
+./start.sh status
+
+# Ver logs
+./start.sh logs
+
+# Reiniciar todo
+./start.sh restart
+
+# Limpiar sesión (forzar nuevo QR)
+./start.sh clean
+
+# Configurar monitoreo automático
+./start.sh setup-cron
 ```
 
-## 📡 **API Endpoints**
+### **Endpoints disponibles:**
+- `GET /` - Página principal con estado
+- `GET /qr-page` - Página con QR (solo URL pública)
+- `GET /status` - Estado del sistema JSON
+- `GET /messages` - Mensajes pendientes
+- `POST /send` - Enviar mensaje
+- `GET /health` - Health check
 
-### **GET /** → Página web con QR
-### **GET /qr** → QR como imagen PNG
-### **GET /status** → Estado del sistema
-```json
-{
-  "status": "ok",
-  "whatsappConnected": true,
-  "hasQR": false,
-  "pendingMessages": 2,
-  "timestamp": 1775506255771
-}
+### **Comandos Telegram (para el usuario):**
+- `quien me escribio` - Chats con mensajes almacenados
+- `solicitudes` - Solicitudes pendientes para Jaime
+- `config` - Estado del sistema
+- `ayuda` - Lista de comandos
+- `respondida [ID]` - Marcar solicitud como respondida
+
+## 🎪 **Funciones Especiales Eroika**
+
+### **El sistema automáticamente:**
+- **Detecta menciones** a: "Donna", "donita", "asistente", "bot"
+- **Responde a saludos**: "Hola Donna", "Gracias Donna", "Bienvenida Donna"
+- **Registra preguntas** por: "Jaime", "número", "teléfono", "contacto"
+- **Ignora mensajes propios** (Donna 🌹, Ecosistemanet, Jaimemprendedor)
+
+### **Ejemplo de flujo:**
+```
+[Eroika] Juan: "Hola Donna"
+[Sistema] "¡Hola Juan! 👋 ¿En qué puedo ayudarte?"
+
+[Eroika] María: "¿Cuál es el número de Jaime?"
+[Sistema] "Jaime te responderá cuando se pueda conectar..."
+[Telegram] "📋 Nueva solicitud para Jaime: ¿Cuál es el número de Jaime?"
 ```
 
-### **GET /messages** → Mensajes pendientes
-### **POST /send** → Enviar mensaje
-```json
-{
-  "to": "56947555490@s.whatsapp.net",
-  "message": "Hola, soy Donna 🦞"
-}
-```
+## 🔒 **Reglas de Seguridad (ORO)**
 
-### **POST /respond** → Responder a mensaje específico
-```json
-{
-  "messageId": "3EB0A764DB3EF54A633D33",
-  "response": "Gracias por tu mensaje"
-}
-```
+### **Establecidas por Jaime:**
+1. **NO confirmar** infraestructura interna (IPs, servidores, configuraciones)
+2. **NO confirmar** relación con InfraQualia o detalles del negocio
+3. **Respuesta genérica:** "Le aviso a Jaime y te respondo"
+4. **Información de negocio** solo con autorización explícita
 
-### **GET /health** → Health check
+### **Para el agente (Donna):**
+- **NUNCA sugerir `localhost:8080`** en notificaciones o mensajes
+- **Solo URLs públicas** como `loca.it` para QR
+- **Verificar estado real** antes de afirmar conexión
 
-## 🔄 **Flujo de trabajo**
+## 📈 **Monitoreo**
 
-### **Para el usuario:**
-1. Iniciar servidor: `./start.sh`
-2. Abrir URL del tunnel en navegador
-3. Escanear QR con WhatsApp
-4. Recibir notificaciones Telegram de mensajes entrantes
-5. Autorizar respuestas por Telegram
-6. Donna envía respuestas por WhatsApp
-
-### **Para Donna (asistente):**
-1. Monitorear `/tmp/whatsapp-server.log`
-2. Verificar estado con `curl localhost:8080/health`
-3. Reiniciar tunnel si expira
-4. Notificar problemas por Telegram
-
-## 🐛 **Solución de problemas**
-
-### **Problema: "Tunnel Unavailable" (Error 503)**
-**Causa:** Tunnel localtunnel expiró (~1 hora de vida)
-**Solución:**
+### **Logs activos:**
 ```bash
-pkill -f "node tunnel.js"
+# Servidor WhatsApp
+tail -f /tmp/whatsapp-server-updated.log
+
+# Bot de reglas
+tail -f /tmp/whatsapp-rules-restart.log
+
+# Sistema de monitoreo
+tail -f /tmp/whatsapp-monitor.log
+
+# Tunnel público
+tail -f /tmp/localtunnel.log
+```
+
+### **Verificación manual:**
+```bash
+# Estado del servidor
+curl http://localhost:8080/status | jq '.'
+
+# Mensajes pendientes
+curl http://localhost:8080/messages | jq '.'
+```
+
+## 🛠️ **Solución de Problemas**
+
+### **Error común: "Tunnel Unavailable" (503)**
+```bash
+# Reiniciar tunnel manualmente
+pkill -f "lt --port"
+lt --port 8080 --local-host 127.0.0.1 > /tmp/localtunnel.log 2>&1 &
+grep -i "your url" /tmp/localtunnel.log
+```
+
+### **Error: "detached Frame" (WhatsApp desconectado)**
+```bash
+# Limpiar sesión y reiniciar
+rm -rf ./.wwebjs_auth
+./start-all.sh
+```
+
+### **Error: Bot de reglas no responde**
+```bash
+# Reiniciar bot
+pkill -f "whatsapp-rules-eroika"
 cd ~/whatsapp-server
-node tunnel.js
+nohup node whatsapp-rules-eroika-especial-fixed.js > /tmp/whatsapp-rules.log 2>&1 &
 ```
 
-### **Problema: QR no se genera**
-**Causa:** Chromium no encontrado
-**Solución:**
-```bash
-# Instalar Chromium
-sudo apt update
-sudo apt install chromium-browser
+## 🔄 **Mantenimiento**
 
-# O especificar ruta en config
-"chromiumPath": "/usr/bin/chromium-browser"
+### **Reiniciar todo el sistema:**
+```bash
+./start-all.sh
 ```
 
-### **Problema: WhatsApp desconectado frecuentemente**
-**Causa:** Sesión no se guarda correctamente
-**Solución:**
+### **Actualizar dependencias:**
 ```bash
-# Limpiar sesión y empezar de nuevo
-rm -rf ./wwebjs_auth
-# Reiniciar servidor
-```
-
-### **Problema: Mensajes no se notifican**
-**Causa:** Token de Telegram incorrecto
-**Solución:** Verificar `config/whatsapp-config.json`
-
-## 📈 **Monitoreo y logs**
-
-### **Logs del servidor:**
-```bash
-tail -f /tmp/whatsapp-server.log
-```
-
-### **Logs del tunnel:**
-```bash
-tail -f /tmp/whatsapp-tunnel.log
-```
-
-### **Estado en tiempo real:**
-```bash
-watch -n 5 'curl -s http://localhost:8080/health | jq .'
-```
-
-### **Mensajes pendientes:**
-```bash
-curl -s http://localhost:8080/messages | jq '.count'
-```
-
-## 🔧 **Mantenimiento**
-
-### **Script de inicio completo (`start.sh`):**
-```bash
-#!/bin/bash
-# WhatsApp Connect - Start Script
-
-echo "🚀 Iniciando WhatsApp Connect..."
-
-# Matar procesos anteriores
-pkill -f "node server-enhanced.js" 2>/dev/null
-pkill -f "node tunnel.js" 2>/dev/null
-sleep 2
-
-# Iniciar servidor
-echo "📱 Iniciando servidor WhatsApp..."
-nohup node server-enhanced.js > /tmp/whatsapp-server.log 2>&1 &
-SERVER_PID=$!
-echo "✅ Servidor iniciado (PID: $SERVER_PID)"
-
-# Esperar que el servidor esté listo
-sleep 5
-
-# Iniciar tunnel
-echo "🌐 Iniciando tunnel público..."
-nohup node tunnel.js > /tmp/whatsapp-tunnel.log 2>&1 &
-TUNNEL_PID=$!
-echo "✅ Tunnel iniciado (PID: $TUNNEL_PID)"
-
-echo ""
-echo "📊 Estado:"
-echo "  Servidor: http://localhost:8080"
-echo "  Logs: /tmp/whatsapp-server.log"
-echo "  Tunnel: /tmp/whatsapp-tunnel.log"
-echo ""
-echo "🔄 Para detener: ./start.sh stop"
-```
-
-### **Reiniciar todo:**
-```bash
-./start.sh restart
-```
-
-### **Actualizar:**
-```bash
-git pull origin main
 npm update
-./start.sh restart
+npm update -g localtunnel
 ```
 
-## 🗂️ **Estructura de archivos**
-
-```
-whatsapp-connect/
-├── SKILL.md                    # Documentación de skill
-├── README.md                   # Este archivo
-├── package.json                # Dependencias
-├── start.sh                    # Script de inicio
-├── server-enhanced.js          # Servidor principal
-├── tunnel.js                   # Tunnel público
-├── config/
-│   └── whatsapp-config.json.example  # Configuración ejemplo
-└── docs/
-    ├── api.md                  # Documentación API
-    ├── troubleshooting.md      # Solución de problemas
-    └── architecture.md         # Arquitectura del sistema
-```
-
-## 🤖 **Integración con Donna (OpenClaw)**
-
-Donna puede usar esta skill para:
-1. **Monitorear** estado del servidor
-2. **Reiniciar** tunnel cuando expire
-3. **Notificar** problemas por Telegram
-4. **Responder** a mensajes cuando sea autorizada
-
-### **Comandos para Donna:**
+### **Rotar logs antiguos:**
 ```bash
-# Verificar estado
-curl -s http://localhost:8080/health | jq .
-
-# Enviar mensaje
-curl -X POST http://localhost:8080/send \
-  -H "Content-Type: application/json" \
-  -d '{"to": "56947555490@s.whatsapp.net", "message": "Hola desde Donna"}'
-
-# Ver mensajes pendientes
-curl -s http://localhost:8080/messages | jq .
+find /tmp -name "whatsapp-*.log" -mtime +7 -delete
+find /tmp -name "localtunnel*.log" -mtime +7 -delete
 ```
 
-## 📝 **Historial de cambios**
+## 📝 **Lecciones Aprendidas (Críticas)**
 
-### **v1.0.0 (2026-04-06)**
-- ✅ Implementación inicial probada y funcionando
-- ✅ Sesión persistente con LocalAuth
-- ✅ Tunnel público con localtunnel
-- ✅ Notificaciones Telegram
-- ✅ API REST completa
-- ✅ QR como imagen PNG
-- ✅ Reconexión automática
-- ✅ Documentación completa
+1. ✅ **NUNCA usar localhost en notificaciones** → Solo URLs públicas (loca.it)
+2. ✅ **Verificar conexión real** → `getWWebVersion()` no solo evento `ready`
+3. ✅ **Sistema autorreparable** → Monitoreo + reinicio automático
+4. ✅ **Ignorar mensajes propios** → Evita loops infinitos
+5. ✅ **Formato WhatsApp real** → `*negrita*`, `_cursiva_`, `~tachado~`, ``` `código` ```
+6. ✅ **Estado preciso** → Reportar correctamente si necesita QR
 
-## 🔮 **Roadmap**
+## 🤝 **Contribuir**
 
-- [ ] Dashboard web con más estadísticas
-- [ ] Soporte para múltiples números
-- [ ] Integración directa con OpenClaw plugins
-- [ ] Webhooks para eventos
-- [ ] Backup automático de sesiones
-- [ ] Panel de administración
-
-## 👥 **Contribuidores**
-
-- **Donna 🦞** - Implementación inicial
-- **Jaime González Vergara** - Requerimientos y testing
+1. **Fork** el repositorio
+2. **Crear rama** de feature (`git checkout -b feature/nueva-funcionalidad`)
+3. **Commit** cambios (`git commit -am 'Agrega nueva funcionalidad'`)
+4. **Push** a la rama (`git push origin feature/nueva-funcionalidad`)
+5. **Crear Pull Request**
 
 ## 📄 **Licencia**
 
-MIT License - Ver [LICENSE](LICENSE) para detalles.
-
-## ❤️ **Agradecimientos**
-
-- [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) - Por la librería excelente
-- [localtunnel](https://github.com/localtunnel/localtunnel) - Por el tunnel público
-- [OpenClaw](https://openclaw.ai) - Por la plataforma
+MIT
 
 ---
 
-**¿Problemas?** [Abre un issue](https://github.com/tu-usuario/whatsapp-connect/issues)  
-**¿Mejoras?** [Envía un PR](https://github.com/tu-usuario/whatsapp-connect/pulls)
+**Creado por:** Donna 🦞  
+**Para:** Jaime González Vergara  
+**Fecha:** 2026-04-06 (Actualizado)  
+**Versión:** 2.0.0  
 
----
-*Última actualización: 2026-04-06*  
-*Creado con ❤️ por Donna 🦞 para Jaime*
+**Nota:** Esta skill representa el estado actual del sistema WhatsApp implementado, con todas las mejoras y lecciones aprendidas durante la implementación.

@@ -85,3 +85,46 @@ _(Actualizar con automatizaciones implementadas)_
 
 *Actualizado: 2026-04-06*  
 *Por: Donna 🦞*
+## 📱 **WhatsApp Configurado (2026-04-06)**
+
+### **Número personal de Jaime:**
+- **WhatsApp:** +56947555490
+- **Formato API:** 56947555490@c.us
+- **Contacto principal** para mensajes directos
+
+### **Sistema implementado:**
+- **Tecnología:** whatsapp-web.js con LocalAuth (sesión persistente)
+- **Servidor:** Express en puerto 8080 (`server-enhanced.js`)
+- **Bot de reglas:** `whatsapp-rules-final.js` (monitoreo cada 30s)
+- **Tunnel público:** https://openclaw-wa.loca.lt (solo para QR inicial)
+
+### **Reglas configuradas:**
+1. **Modo escucha:** Silencio por defecto
+2. **Whitelist activa:** 
+   - Eroika (grupo de trabajo)
+   - Equipo | Ecosistemanet
+3. **Notificaciones:** Formato simple (30 caracteres)
+4. **Resúmenes:** Desactivados para Eroika, cada 10+ mensajes para otros
+5. **Almacenamiento:** Silencioso para todos los chats
+6. **Seguridad:** Respuesta genérica para información sensible
+
+### **Formatos WhatsApp validados:**
+- `*texto*` → **Negrita**
+- `_texto_` → _Cursiva_
+- `~texto~` → ~~Tachado~~
+- ``` `texto` ``` → `Código`
+
+### **Configuración especial:**
+- **Hora:** Santiago, Chile (America/Santiago)
+- **Firma Donna:** "Donna 🌹"
+- **Estilo:** Humano, conversacional, natural
+- **Anti-loops:** Activado (parámetro `since` en API)
+- **Anti-duplicados:** Cache de 10 minutos por mensaje
+
+### **Comandos disponibles (Telegram):**
+- `quien me escribio` — Chats con mensajes almacenados
+- `que se habla en [chat]?` — Consulta conversación específica
+- `config` — Estado del sistema
+- `ayuda` — Lista de comandos
+
+### **Estado:** ✅ Sistema completamente configurado, validado y listo para producción
