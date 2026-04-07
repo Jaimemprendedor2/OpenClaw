@@ -263,7 +263,7 @@ MIT
 
 ---
 
-**Creado por:** Donna 🦞  
+**Creado por:** Donna 🌹  
 **Para:** Jaime González Vergara  
 **Fecha:** 2026-04-06 (Actualizado)  
 **Versión:** 2.0.0  

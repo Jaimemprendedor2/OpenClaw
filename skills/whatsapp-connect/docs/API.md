@@ -102,7 +102,7 @@ Todos los endpoints devuelven JSON a menos que se especifique lo contrario.
 ```json
 {
   "to": "56912345678@s.whatsapp.net",
-  "message": "Hola, soy Donna 🦞"
+  "message": "Hola, soy Donna 🌹"
 }
 ```
 

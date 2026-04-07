@@ -2,7 +2,7 @@
 
 **Estatus:** ACTIVO - Seguir estrictamente  
 **Última revisión:** 2026-04-05  
-**Responsable:** Donna 🦞
+**Responsable:** Donna 🌹
 
 ---
 

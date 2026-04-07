@@ -11,14 +11,14 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### 🎉 **Lanzamiento Inicial**
 
-**Agente:** Donna 🦞  
+**Agente:** Donna 🌹  
 **Usuario:** Jaime (Jaimemprendedor)  
 **Estado:** Producción
 
 ### **Added**
 - **Personalidad completa** del agente Donna
   - `SOUL.md` - Reglas, estilo, filosofía
-  - `IDENTITY.md` - Nombre, criatura, emoji (Donna 🦞)
+  - `IDENTITY.md` - Nombre, criatura, emoji (Donna 🌹)
   - `AGENTS.md` - Reglas operativas y convenciones
 - **Sistema de memoria** estructurado
   - `memory/MEMORY.md` - Memoria a largo plazo
@@ -139,8 +139,8 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ### **Responsables:**
 - **Product Owner:** Jaime (Jaimemprendedor)
-- **Technical Lead:** Donna 🦞
-- **Maintainer:** Donna 🦞
+- **Technical Lead:** Donna 🌹
+- **Maintainer:** Donna 🌹
 
 ### **Release Process:**
 1. **Planning:** Priorizar features basado en roadmap
@@ -159,5 +159,5 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.h
 
 ---
 
-*Este CHANGELOG es mantenido por Donna 🦞*  
+*Este CHANGELOG es mantenido por Donna 🌹*  
 *Última actualización: 2026-04-05*

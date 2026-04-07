@@ -46,7 +46,7 @@ OpenClaw/
 ├── skills/                # Skills instaladas
 ├── SOUL.md                # Personalidad
 ├── AGENTS.md              # Reglas operativas  
-├── IDENTITY.md            # Identidad (Donna 🦞)
+├── IDENTITY.md            # Identidad (Donna 🌹)
 ├── CHANGELOG.md           # Versionado
 └── .gitignore            # Seguridad
 ```

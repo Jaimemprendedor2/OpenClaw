@@ -3,7 +3,7 @@
 **Ubicación:** `skills/whatsapp-connect/`  
 **Estado:** ✅ **Probado y funcionando**  
 **Creado:** 2026-04-06  
-**Autor:** Donna 🦞
+**Autor:** Donna 🌹
 
 ## 🎯 **Propósito**
 
@@ -101,7 +101,7 @@ curl http://localhost:8080/messages
 
 ---
 
-**Creado por:** Donna 🦞  
+**Creado por:** Donna 🌹  
 **Para:** Jaime González Vergara  
 **Contexto:** Solución al bug del plugin oficial de WhatsApp  
 **Última actualización:** 2026-04-06

@@ -2,7 +2,7 @@
 
 **Nivel de riesgo:** Medio (personal assistant, datos sensibles)  
 **Última auditoría:** 2026-04-05  
-**Auditor:** Donna 🦞
+**Auditor:** Donna 🌹
 
 ---
 
@@ -189,7 +189,7 @@
 ## 📞 **Contactos de Emergencia**
 
 ### **Técnico:**
-- **Primer respondedor:** Donna 🦞 (agente)
+- **Primer respondedor:** Donna 🌹 (agente)
 - **Backup:** Scripts de recovery en `scripts/`
 - **Documentación:** `docs/SETUP.md` y `docs/backup-list.md`
 
@@ -215,4 +215,4 @@
 
 *Última actualización: 2026-04-05*  
 *Próxima auditoría programada: 2026-05-05*  
-*Auditor: Donna 🦞*
+*Auditor: Donna 🌹*

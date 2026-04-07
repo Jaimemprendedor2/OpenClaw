@@ -1,6 +1,6 @@
 # Infraestructura — OpenClaw de Jaime
 
-_Actualizado: 2026-04-05 · Auditado por Donna 🦞_
+_Actualizado: 2026-04-05 · Auditado por Donna 🌹_
 
 **Historial de cambios:**
 - 2026-04-05: IP pública cambiada a estática reservada (168.129.177.118)
@@ -115,7 +115,7 @@ _Actualizado: 2026-04-05 · Auditado por Donna 🦞_
 ├── skills/              # Skills instaladas (gog, etc.)
 ├── context/             # Contexto para Claude (CLAUDE.md)
 ├── logs/                # Logs de auditoría y alertas
-├── SOUL.md              # Personalidad de Donna 🦞
+├── SOUL.md              # Personalidad de Donna 🌹
 ├── AGENTS.md            # Reglas operativas
 ├── IDENTITY.md          # Identidad (Donna)
 └── .git/                # Repositorio Git (GitHub)
@@ -177,4 +177,4 @@ last -n 10
 
 ---
 
-_Última auditoría completa: 2026-04-05 · Por Donna 🦞_
+_Última auditoría completa: 2026-04-05 · Por Donna 🌹_

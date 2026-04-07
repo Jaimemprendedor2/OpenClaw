@@ -46,7 +46,7 @@ _2026-04-06: Configuración de modelos actualizada por Jaime. Modelo primario: C
 **OpenClaw:**
 - Gateway: local loopback (127.0.0.1)
 - Canal principal: Telegram
-- Agente: Donna 🦞
+- Agente: Donna 🌹
 - Modelo primario: anthropic/claude-sonnet-4-6
 - Modelos fallback: deepseek/deepseek-chat, deepseek/deepseek-reasoner
 
@@ -84,7 +84,7 @@ _(Actualizar con automatizaciones implementadas)_
 ---
 
 *Actualizado: 2026-04-06*  
-*Por: Donna 🦞*
+*Por: Donna 🌹*
 ## 📱 **WhatsApp Configurado (2026-04-06)**
 
 ### **Número personal de Jaime:**

@@ -1,4 +1,4 @@
-# OpenClaw Workspace - Donna 🦞
+# OpenClaw Workspace - Donna 🌹
 
 **Agente personal de Jaime (Jaimemprendedor)**  
 *Directo, práctico, en español, orientado a resultados*
@@ -107,4 +107,4 @@
 ---
 
 *Última actualización: 2026-04-05*  
-*Por: Donna 🦞*
+*Por: Donna 🌹*

@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-04-05  
 **Usuario:** Jaime (Jaimemprendedor)  
-**Agente:** Donna 🦞
+**Agente:** Donna 🌹
 
 ---
 
@@ -23,7 +23,7 @@
    ```
    OpenClaw/
    ├── SOUL.md                    # Personalidad del agente
-   ├── IDENTITY.md                # Identidad (Donna 🦞)
+   ├── IDENTITY.md                # Identidad (Donna 🌹)
    ├── AGENTS.md                  # Reglas operativas
    ├── USER.md                    # Perfil del usuario
    ├── MEMORY.md                  # Memoria a largo plazo
@@ -234,5 +234,5 @@
 
 ---
 
-*Configuración completada por Donna 🦞*  
+*Configuración completada por Donna 🌹*  
 *Última actualización: 2026-04-05 04:23 UTC*

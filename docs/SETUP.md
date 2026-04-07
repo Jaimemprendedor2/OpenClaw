@@ -1,6 +1,6 @@
 # Setup de OpenClaw - Guía Completa
 
-**Agente:** Donna 🦞  
+**Agente:** Donna 🌹  
 **Usuario:** Jaime (Jaimemprendedor)  
 **Repo:** https://github.com/Jaimemprendedor2/OpenClaw.git
 
@@ -148,7 +148,7 @@ OpenClaw/
 │   └── setup-*.sh       # Setup producción
 ├── SOUL.md              # Personalidad agente
 ├── AGENTS.md            # Reglas operativas
-├── IDENTITY.md          # Identidad (Donna 🦞)
+├── IDENTITY.md          # Identidad (Donna 🌹)
 ├── CHANGELOG.md         # Historial cambios
 └── .gitignore           # Root gitignore
 ```
@@ -211,7 +211,7 @@ openclaw gateway start --verbose
 - [GitHub Discussions](https://github.com/openclaw/openclaw/discussions)
 
 ### **Contacto directo:**
-- Agente: Donna 🦞 (via Telegram)
+- Agente: Donna 🌹 (via Telegram)
 - Usuario: Jaime (@Jaimemprendedor)
 
 ---
@@ -226,4 +226,4 @@ openclaw gateway start --verbose
 ---
 
 *Última actualización: 2026-04-05*  
-*Mantenedor: Donna 🦞*
+*Mantenedor: Donna 🌹*

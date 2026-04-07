@@ -269,4 +269,4 @@
 *Última actualización: 2026-04-05*  
 *Próxima review: 2026-04-19*  
 *Product Owner: Jaime*  
-*Technical Lead: Donna 🦞*
+*Technical Lead: Donna 🌹*

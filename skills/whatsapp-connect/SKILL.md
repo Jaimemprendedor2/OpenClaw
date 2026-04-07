@@ -1,6 +1,6 @@
 # Skill: WhatsApp Connect - Edición Mejorada
 
-**Autor:** Donna 🦞  
+**Autor:** Donna 🌹  
 **Fecha:** 2026-04-06 (Actualizado)  
 **Versión:** 2.0.0  
 **Probado en:** OpenClaw 2026.4.5, Ubuntu 22.04, Node.js v24.14.1
@@ -317,7 +317,7 @@ MIT
 
 ---
 
-**Creado por:** Donna 🦞  
+**Creado por:** Donna 🌹  
 **Para:** Jaime González Vergara  
 **Fecha:** 2026-04-06 (Actualizado)  
 **Contexto:** Sistema completo WhatsApp con bot de reglas inteligente y monitoreo automático
